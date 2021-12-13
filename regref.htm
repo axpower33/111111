@@ -1,0 +1,136 @@
+<html>
+<head>
+
+    <BASE HREF=<"file:///C:/axpower/POWER/Halyava">
+    <meta http-equiv="Content-Type" content="textC:/axpower/POWER/Halyava/html/; charset=windows-1251">
+    <font face="Bookman Old Style" size=2 color="#123456">
+</head>
+
+<style type="text/css">
+ A:link{COLOR:teal;TEXT-DECORATION:none}
+ A:visited{COLOR:teal;TEXT-DECORATION:none}
+ A:active{COLOR:brown;TEXT-DECORATION:none}
+ A:hover{COLOR:GOLD}
+</style>
+
+<script language="JavaScript">
+
+function Verinfo()
+{
+  if (pMemD.pFName.value=="")
+    { alert("Имя должно быть заполнено");
+      pMemD.pFName.focus();
+      return false;
+    }
+   if (pMemD.pMName.value=="")
+    { alert("Отчество должно быть заполнено");
+      pMemD.pMName.focus();
+      return false;
+    }
+   if (pMemD.pLName.value=="")
+    { alert("Фамилия должна быть заполнена");
+      pMemD.pLName.focus();
+      return false;
+    }
+    if (pMemD.pEmail.value=="")
+    { alert("Введите ваш е-мыйл");
+      pMemD.pEmail.focus();
+      return false;
+    }
+    if (pMemD.pLogin.value=="")
+    { alert("Введите ваш логин-псевдоним ");
+      pMemD.pLogin.focus();
+      return false;
+    }
+    if (pMemD.passr1.value=="")
+    { alert("Введите ваш пароль");
+      pMemD.passr1.focus();
+      return false;
+    }
+    if (pMemD.passr2.value=="")
+    { alert("Повторите пароль");
+      pMemD.passr2.focus();
+        return false;
+    }
+// (pMemD.passr1.value!=pMemD.passr2.value)
+// { alert("Пароли должны совпадать");
+//      pMemD.passr1.focus();
+//      return false;
+//    }
+    if (pMemD.pIndex.value=="")
+    { alert("Введите ваш индекс");
+      pMemD.pIndex.focus();
+      return false;
+    }
+    if (pMemD.pRegion.value=="")
+    { alert("Введите район");
+      pMemD.pRegion.focus();
+      return false;
+    }
+    if (pMemD.pCity.value=="")
+    { alert("Введите город/населенный пункт");
+      pMemD.pCity.focus();
+      return false;
+    }
+    if (pMemD.pAdress.value=="")
+    { alert("Введите улицу,корпус,дом");
+      pMemD.pAdress.focus();
+      return false;
+    }
+ return true;
+}
+
+
+</script>
+
+<body background="images/dc5.gif" link=teal alink=teal vlink=teal>
+<b>
+<center>
+<h4 style="background-color:teal">
+<font color=white>Регистрация посетителей</font></h4>
+  Введите ваши данные и мы будем высылать вам
+  обновленные ссылки, с помощью которых вы можете
+  неплохо заработать или получить бесплатно полезную вещь.
+  А также мы будем периодически сообщать вам новости в мире халявного бизнеса.<br><br>
+
+
+</center>
+<br> 
+<form style="font-size:14" Id=pReg ACTION="http://alxpower.virtualave.net/cgi-bin/reg.pl" METHOD="POST" NAME="pMemD" onSubmit="return Verinfo();">
+
+  <pre>
+   Имя        <input id=pFName type="text"  name="fname"  size=12  value="">
+
+   Отчество   <input id=pMName type="text"  name="mname"  size=18  value="">
+
+   Фамилия    <input id=pLName type="text"  name="lname"  size=18  value="">
+
+   Ваш E-mail <input id=pEmail type="text"  name="email"  size=25  value="">
+
+   Логин      <input id=pLogin type="text"  name="login"  size=10  value="">
+
+   Пароль     <input id=pPs1 type="password" name="passr1"  size=10  value="">
+
+   Подт.пароль<input id=pPs2   type="password" name="passr2"  size=10  value="">
+
+   Индекс     <input id=pIndex type="text"  name="zip"    size=6   value="">
+
+   Район      <input id=pRegion type="text"  name="region" size=35  value="">
+
+   Город      <input id=pCity   type="text"  name="city"   size=20  value="">
+
+   Адрес      <input id=pAdress type="text"  name="adress" size=35  value="">
+
+   Если вы хотите получать новости от нас,  <input id=pChBx type="checkbox" name="chbox" checked>
+   на Ваш е-мыйл, то поставьте здесь галочку.
+
+         <input type="submit" value="Зарегистрироваться">
+  </pre>
+</form>
+
+</body>
+
+
+
+
+<C:/axpower/POWER/Halyava/html/>
